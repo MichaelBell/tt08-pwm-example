@@ -9,6 +9,7 @@ module pwm_sine (
     output reg pwm
 );
 
+    // The PWM module converts the sample of our sine wave to a PWM output
     wire [7:0] sample;
 
     pwm_audio i_pwm(
@@ -20,6 +21,8 @@ module pwm_sine (
         .pwm(pwm)
     );
 
+    // The sine data table has 64 entries, and these are reflected to create a total of 256
+    // values across a full period.  Every divider+1 clocks, we move to the next entry in the table.
     reg [11:0] count;
     reg [7:0] sine_input;
 
@@ -37,6 +40,13 @@ module pwm_sine (
         end
     end
 
+    // ROM to look up values across 1/4 of a sine wave
+    // Data generated with the following Python:
+    /*
+        for i in range(64):
+            val = int(math.sin(i*math.pi/(2*64))*128)
+            print(f"{i}: raw_sine_rom = 7'd{val};")
+    */
     function [6:0] raw_sine_rom(input [5:0] val);
         case (val)
 0: raw_sine_rom = 7'd0;
@@ -106,6 +116,7 @@ module pwm_sine (
         endcase
     endfunction
 
+    // Function to compute roughly 127.5 + 127.5 * sin(2pi * val / 256)
     function automatic [7:0] sine(input [7:0] val);
         reg [5:0] negated_val;
         reg [6:0] half_sine;

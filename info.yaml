@@ -11,7 +11,7 @@ project:
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_pwm_exmaple"
+  top_module:  "tt_um_pwm_example"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
@@ -34,20 +34,20 @@ pinout:
   ui[7]: "Frequency divider bit 4"
 
   # Outputs
-  uo[0]: "Frequency divider bit 3"
-  uo[1]: "Frequency divider bit 2"
-  uo[2]: "Frequency divider bit 1"
-  uo[3]: "Frequency divider bit 0"
+  uo[0]: ""
+  uo[1]: ""
+  uo[2]: ""
+  uo[3]: ""
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
   uo[7]: "PWM output"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
+  uio[0]: "Frequency divider bit 3"
+  uio[1]: "Frequency divider bit 2"
+  uio[2]: "Frequency divider bit 1"
+  uio[3]: "Frequency divider bit 0"
   uio[4]: ""
   uio[5]: ""
   uio[6]: ""

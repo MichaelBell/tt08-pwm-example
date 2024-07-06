@@ -1,6 +1,8 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
-# Tiny Tapeout Verilog Project Template
+# PWM audio example
+
+This project is a simple example for the [PWM audio Pmod](https://github.com/MichaelBell/tt-audio-pmod)
 
 - [Read the documentation for project](docs/info.md)
 
