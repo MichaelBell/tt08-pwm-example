@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Jul  7 09:55:01 2024
+[*]
+[dumpfile] "/home/mdb36/tt/tt08-pwm-example/test/tb.vcd"
+[dumpfile_mtime] "Sun Jul  7 09:54:05 2024"
+[dumpfile_size] 5144115
+[savefile] "/home/mdb36/tt/tt08-pwm-example/test/sine.gtkw"
+[timestart] 0
+[size] 2548 1407
+[pos] 1972 -588
+*-27.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[treeopen] tb.user_project.
+[sst_width] 214
+[signals_width] 118
+[sst_expanded] 1
+[sst_vpaned_height] 435
+@28
+tb.user_project.i_sine.pwm
+@10022
+tb.user_project.i_sine.sample[7:0]
+@20000
+-
+-
+-
+-
+-
+@20001
+-
+[pattern_trace] 1
+[pattern_trace] 0
