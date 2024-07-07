@@ -126,7 +126,7 @@ module pwm_sine (
         reg [5:0] negated_val;
         reg [6:0] half_sine;
         negated_val = 6'd63 - val[5:0];
-        half_sine = val[6] ? raw_sine_rom(negated_val[5:0]) : raw_sine_rom(val[5:0]);
+        half_sine = raw_sine_rom(val[6] ? negated_val[5:0] : val[5:0]);
         sine = val[7] ? 7'd127 - half_sine : {1'b1, half_sine};
     endfunction
 
