@@ -1,23 +1,21 @@
 [*]
-[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Sun Jul  7 09:55:01 2024
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Wed Jul 10 10:42:14 2024
 [*]
 [dumpfile] "/home/mdb36/tt/tt08-pwm-example/test/tb.vcd"
-[dumpfile_mtime] "Sun Jul  7 09:54:05 2024"
-[dumpfile_size] 5144115
+[dumpfile_mtime] "Wed Jul 10 10:41:35 2024"
+[dumpfile_size] 5141910
 [savefile] "/home/mdb36/tt/tt08-pwm-example/test/sine.gtkw"
 [timestart] 0
-[size] 2548 1407
-[pos] 1972 -588
+[size] 2560 1393
+[pos] -27 -24
 *-27.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb.
 [treeopen] tb.user_project.
-[sst_width] 214
-[signals_width] 118
+[sst_width] 297
+[signals_width] 126
 [sst_expanded] 1
 [sst_vpaned_height] 435
-@28
-tb.user_project.i_sine.pwm
 @10022
 tb.user_project.i_sine.sample[7:0]
 @20000
@@ -26,7 +24,19 @@ tb.user_project.i_sine.sample[7:0]
 -
 -
 -
-@20001
 -
+@800022
+tb.user_project.uio_out[7:0]
+@28
+(0)tb.user_project.uio_out[7:0]
+(1)tb.user_project.uio_out[7:0]
+(2)tb.user_project.uio_out[7:0]
+(3)tb.user_project.uio_out[7:0]
+(4)tb.user_project.uio_out[7:0]
+(5)tb.user_project.uio_out[7:0]
+(6)tb.user_project.uio_out[7:0]
+(7)tb.user_project.uio_out[7:0]
+@1001200
+-group_end
 [pattern_trace] 1
 [pattern_trace] 0

@@ -14,12 +14,15 @@ set_io --warn-no-port ui_in[7] 20
 
 set_io --warn-no-port uio_in[0]  43
 set_io --warn-no-port uio_in[1]  38
-set_io --warn-no-port uio_in[2]  34
-set_io --warn-no-port uio_in[3]  31
+#set_io --warn-no-port uio_in[2]  34
+#set_io --warn-no-port uio_in[3]  31
 set_io --warn-no-port uio_in[4]  42
 set_io --warn-no-port uio_in[5]  36
 set_io --warn-no-port uio_in[6]  32
 set_io --warn-no-port uio_in[7]  28
+
+set_io --warn-no-port uio_in[2]  40
+set_io --warn-no-port uio_in[3]  41
 
 set_io --warn-no-port uo_out[0] 4
 set_io --warn-no-port uo_out[1] 2

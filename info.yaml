@@ -41,7 +41,7 @@ pinout:
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
-  uo[7]: "PWM output"
+  uo[7]: ""
 
   # Bidirectional pins
   uio[0]: "Frequency divider bit 3"
@@ -51,7 +51,7 @@ pinout:
   uio[4]: ""
   uio[5]: ""
   uio[6]: ""
-  uio[7]: ""
+  uio[7]: "PWM output"
 
 # Do not change!
 yaml_version: 6
