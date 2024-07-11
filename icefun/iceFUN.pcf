@@ -2,6 +2,13 @@
 
 set_io --warn-no-port clk12MHz	P7
 
+set_io --warn-no-port spi_cs  B14
+set_io --warn-no-port spi_mosi  C12
+set_io --warn-no-port spi_miso  H12
+set_io --warn-no-port spi_clk  B14
+
+set_io --warn-no-port cs1  H11
+
 set_io --warn-no-port pwm  L12
 
 set_frequency clk12MHz 12

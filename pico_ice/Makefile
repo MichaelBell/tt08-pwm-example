@@ -2,7 +2,7 @@
 PROJ      = pwm_audio
 
 # Files
-FILES = pico_ice.v ../src/pwm.v ../src/sine.v
+FILES = pico_ice.v ../src/pwm.v ../src/spi.v
 
 .PHONY: pico_ice clean burn
 

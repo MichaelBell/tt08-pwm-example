@@ -3,9 +3,9 @@ project:
   title:        "PWM Example"      # Project title
   author:       "Mike Bell"      # Your name
   discord:      "rebelmike"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Generates a sine wave using PWM"      # One line description of what your project does
+  description:  "Plays back PCM U8 audio from SPI flash using PWM"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     57600000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -19,19 +19,19 @@ project:
   source_files:
     - "project.v"
     - "pwm.v"
-    - "sine.v"
+    - "spi.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "Frequency divider bit 11"
-  ui[1]: "Frequency divider bit 10"
-  ui[2]: "Frequency divider bit 9"
-  ui[3]: "Frequency divider bit 8"
-  ui[4]: "Frequency divider bit 7"
-  ui[5]: "Frequency divider bit 6"
-  ui[6]: "Frequency divider bit 5"
-  ui[7]: "Frequency divider bit 4"
+  ui[0]: ""
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
 
   # Outputs
   uo[0]: ""
@@ -41,16 +41,16 @@ pinout:
   uo[4]: ""
   uo[5]: ""
   uo[6]: ""
-  uo[7]: ""
+  uo[7]: "PWM"
 
   # Bidirectional pins
-  uio[0]: "Frequency divider bit 3"
-  uio[1]: "Frequency divider bit 2"
-  uio[2]: "Frequency divider bit 1"
-  uio[3]: "Frequency divider bit 0"
+  uio[0]: "SPI CS"
+  uio[1]: "SPI MOSI"
+  uio[2]: "SPI MISO"
+  uio[3]: "SPI SCK"
   uio[4]: ""
   uio[5]: ""
-  uio[6]: ""
+  uio[6]: "1"
   uio[7]: "PWM output"
 
 # Do not change!

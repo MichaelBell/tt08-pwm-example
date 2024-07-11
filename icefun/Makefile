@@ -2,7 +2,7 @@
 PROJ      = pwm_audio
 
 # Files
-FILES = iceFUN.v ../src/pwm.v ../src/sine.v
+FILES = iceFUN.v ../src/pwm.v ../src/spi.v
 
 .PHONY: iceFUN stats synth burn
 
